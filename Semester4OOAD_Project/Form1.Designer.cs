@@ -1,5 +1,6 @@
 ﻿namespace Semester4OOAD_Project
 {
+     //bang bang :D 
     partial class Form1
     {
         /// <summary>
