@@ -95,6 +95,18 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="classAdmin.cs" />
+    <Compile Include="classCartItem.cs" />
+    <Compile Include="classClient.cs" />
+    <Compile Include="classDbClient.cs" />
+    <Compile Include="classDbDoctor.cs" />
+    <Compile Include="classDbHospital.cs" />
+    <Compile Include="classDbPharmacy.cs" />
+    <Compile Include="classDoctor.cs" />
+    <Compile Include="classHospital.cs" />
+    <Compile Include="classPharmacy.cs" />
+    <Compile Include="classPharmacyProducts.cs" />
+    <Compile Include="classProduct.cs" />
     <Compile Include="Service1.svc.cs">
       <DependentUpon>Service1.svc</DependentUpon>
     </Compile>
