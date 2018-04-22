@@ -31,7 +31,8 @@ namespace Semester4OOAD_Project
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-            if (textBoxConfirmPass.Text == textBoxPassword.Text && textBoxPassword.Text!=""){
+            network.Service1 ser = new network.Service1();
+            /*if (textBoxConfirmPass.Text == textBoxPassword.Text && textBoxPassword.Text!=""){
                 classAdmin.password = textBoxPassword.Text;
             }
             else
@@ -63,21 +64,53 @@ namespace Semester4OOAD_Project
             textBoxName.Text = classAdmin.name;
             textBoxNumber.Text = classAdmin.mobile;
             modifydp.Image = classAdmin.dp;
+            */
+            ser.update_admin(textBoxName.Text, textBoxPassword.Text, textBoxNumber.Text,"");
 
         }
 
         private void formUpdateProfile_Load(object sender, EventArgs e)
         {
-            textBoxName.Text = classAdmin.name;
-            textBoxNumber.Text = classAdmin.mobile;
-            modifydp.Image = classAdmin.dp;
-            gMapControl1.DragButton = MouseButtons.Left;
-            gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleTerrainMapProvider.Instance;
-            gMapControl1.Position = new GMap.NET.PointLatLng(classAdmin.Longitude,classAdmin.Latitude);
+            network.Service1 ser = new network.Service1();
+            network.classAdmin adm = ser.get_admin_obj();
+            textBoxName.Text = adm.Name;
+            textBoxNumber.Text = adm.Mobile;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            //network.Service1 ser = new network.Service1();
+            //List<network.classAdmin> ll = ser.get_admin_db().ToList<network.classAdmin>();
+           /* foreach(network.classAdmin i in ll)
+            {
+                textBoxName.Text = i.Name;
+                textBoxNumber.Text = i.Mobile;
+                modifydp.Image = classAdmin.dp;
+                gMapControl1.DragButton = MouseButtons.Left;
+                gMapControl1.MapProvider = GMap.NET.MapProviders.GoogleTerrainMapProvider.Instance;
+                gMapControl1.Position = new GMap.NET.PointLatLng(classAdmin.Longitude, classAdmin.Latitude);
+
+                gMapControl1.MaxZoom = 100;
+                gMapControl1.MinZoom = 1;
+                gMapControl1.Zoom = 15;
+
+            }*/
             
-            gMapControl1.MaxZoom = 100;
-            gMapControl1.MinZoom = 1;
-            gMapControl1.Zoom = 15;
+
+
+            
 
 
 
