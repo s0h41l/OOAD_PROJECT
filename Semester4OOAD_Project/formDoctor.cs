@@ -25,21 +25,23 @@ namespace Semester4OOAD_Project
 
         private void DoctorDp_Click(object sender, EventArgs e)
         {
-            DoctorDp.Image = loginSessionDoctor.session.Dp;
+            //DoctorDp.Image = loginSessionDoctor.session.Dp;
         }
 
         private void bunifuDropdown1_onItemSelected(object sender, EventArgs e)
         {
-            loginSessionDoctor.session.Specializtion = dropDownSpecialization.selectedValue;
+            network.Service1 ser = new network.Service1();
+            ser.set_doctor_specialization(loginSessionDoctor.session.Email, dropDownSpecialization.selectedValue);
         }
 
         private void formDoctor_Load(object sender, EventArgs e)
         {
-            DoctorDp.Image = loginSessionDoctor.session.Dp;
-            List<classDoctor> d = new List<classDoctor>();
-            d.Add(loginSessionDoctor.session);
+            network.Service1 ser = new network.Service1();
+            List<network.classDoctor> doc = new List<network.classDoctor>();
+            doc.Add(loginSessionDoctor.session);
+            //DoctorDp.Image = loginSessionDoctor.session.Dp; 
             BindingSource src = new BindingSource();
-            src.DataSource = d;
+            src.DataSource = doc;
             dataGridDocProfile.DataSource = src;
             labelDoctorName.Text = loginSessionDoctor.session.Name;
 
