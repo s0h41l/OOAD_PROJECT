@@ -2,9 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Drawing;
+using System.Runtime.Serialization;
 
 namespace OOAD_PROJECT_SERVER
 {
+    [DataContract]
     public class classHospital
     {
         private long id;
@@ -17,13 +20,15 @@ namespace OOAD_PROJECT_SERVER
         private Image dp;
         private string secretq;
         private string secreta;
-
         private string adress;
+        private double longitude = 0;
+        private double latitude = 0;
+
         public classHospital()
         {
             count++;
         }
-
+        [DataMember]
         public string Name
         {
             get
@@ -36,7 +41,7 @@ namespace OOAD_PROJECT_SERVER
                 name = value;
             }
         }
-
+        [DataMember]
         public string Email
         {
             get
@@ -49,7 +54,7 @@ namespace OOAD_PROJECT_SERVER
                 email = value;
             }
         }
-
+        [DataMember]
         public string Password
         {
             get
@@ -62,7 +67,8 @@ namespace OOAD_PROJECT_SERVER
                 password = value;
             }
         }
-
+        [DataMember]
+        
         public string Mobile
         {
             get
@@ -75,7 +81,7 @@ namespace OOAD_PROJECT_SERVER
                 mobile = value;
             }
         }
-
+        [DataMember]
         public string Type
         {
             get
@@ -88,7 +94,7 @@ namespace OOAD_PROJECT_SERVER
                 type = value;
             }
         }
-
+        [DataMember]
         public Image Dp
         {
             get
@@ -101,7 +107,7 @@ namespace OOAD_PROJECT_SERVER
                 dp = value;
             }
         }
-
+        [DataMember]
         public string Secretq
         {
             get
@@ -114,7 +120,7 @@ namespace OOAD_PROJECT_SERVER
                 secretq = value;
             }
         }
-
+        [DataMember]
         public string Secreta
         {
             get
@@ -128,7 +134,7 @@ namespace OOAD_PROJECT_SERVER
             }
         }
 
-
+        [DataMember]
         public string Adress
         {
             get
@@ -141,7 +147,7 @@ namespace OOAD_PROJECT_SERVER
                 adress = value;
             }
         }
-
+        [DataMember]
         public long Id
         {
             get
@@ -152,6 +158,32 @@ namespace OOAD_PROJECT_SERVER
             set
             {
                 id = value;
+            }
+        }
+        [DataMember]
+        public double Longitude
+        {
+            get
+            {
+                return longitude;
+            }
+
+            set
+            {
+                longitude = value;
+            }
+        }
+        [DataMember]
+        public double Latitude
+        {
+            get
+            {
+                return latitude;
+            }
+
+            set
+            {
+                latitude = value;
             }
         }
     }

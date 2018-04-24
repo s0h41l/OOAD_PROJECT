@@ -92,12 +92,15 @@
     <Content Include="scripts\ai.0.15.0-build58334.js" />
     <Content Include="scripts\ai.0.15.0-build58334.min.js" />
     <Content Include="Service1.svc" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classAdmin.cs" />
     <Compile Include="classCartItem.cs" />
     <Compile Include="classClient.cs" />
+    <Compile Include="Properties\classdbAdmin.cs" />
     <Compile Include="classDbClient.cs" />
     <Compile Include="classDbDoctor.cs" />
     <Compile Include="classDbHospital.cs" />
@@ -123,9 +126,11 @@
     </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
+      <SubType>Designer</SubType>
     </None>
   </ItemGroup>
   <PropertyGroup>

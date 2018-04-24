@@ -10,8 +10,6 @@ using System.Windows.Forms;
 
 namespace Semester4OOAD_Project
 {
-    
-    
     public partial class Form1 : Form
     {
         public Form1()
@@ -21,7 +19,8 @@ namespace Semester4OOAD_Project
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+            network.Service1 ser = new network.Service1();
+            ser.initiate();
 
             
           

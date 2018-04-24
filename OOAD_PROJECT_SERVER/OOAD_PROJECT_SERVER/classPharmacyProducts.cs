@@ -2,22 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using System.Runtime.Serialization;
 namespace OOAD_PROJECT_SERVER
 {
+    [DataContract]
     public class classPharmacyProducts
     {
         public static int count = 0;
-        private string product_id;
+        private int product_id;
         private string product_name;
-        private string product_price;
+        private long product_price;
         private long product_quantity;
-        classPharmacyProducts()
+        public classPharmacyProducts()
         {
+            product_id = count;
             count++;
+            
         }
-
-        public string Product_id
+        [DataMember]
+        public int Product_id
         {
             get
             {
@@ -29,7 +32,7 @@ namespace OOAD_PROJECT_SERVER
                 product_id = value;
             }
         }
-
+        [DataMember]
         public string Product_name
         {
             get
@@ -42,8 +45,8 @@ namespace OOAD_PROJECT_SERVER
                 product_name = value;
             }
         }
-
-        public string Product_price
+        [DataMember]
+        public long Product_price
         {
             get
             {
@@ -55,7 +58,7 @@ namespace OOAD_PROJECT_SERVER
                 product_price = value;
             }
         }
-
+        [DataMember]
         public long Product_quantity
         {
             get

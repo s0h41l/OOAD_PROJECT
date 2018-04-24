@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-
+using System.Drawing;
+using System.Runtime.Serialization;
 namespace OOAD_PROJECT_SERVER
 {
+    [DataContract]
     public class classPharmacy
     {
         public static long count;
@@ -19,8 +21,8 @@ namespace OOAD_PROJECT_SERVER
         private string secreta;
         private double longitude = 0;
         private double latitude = 0;
-        public List<classProduct> productdb = new List<classProduct>();
-        public List<classCartItem> order = new List<classCartItem>();
+        private List<classPharmacyProducts> productdb = new List<classPharmacyProducts>();
+        private List<classCartItem> order = new List<classCartItem>();
 
         private string adress;
 
@@ -28,7 +30,7 @@ namespace OOAD_PROJECT_SERVER
         {
             count++;
         }
-
+        [DataMember]
         public string Name
         {
             get
@@ -41,7 +43,7 @@ namespace OOAD_PROJECT_SERVER
                 name = value;
             }
         }
-
+        [DataMember]
         public string Email
         {
             get
@@ -54,7 +56,7 @@ namespace OOAD_PROJECT_SERVER
                 email = value;
             }
         }
-
+        [DataMember]
         public string Password
         {
             get
@@ -67,7 +69,7 @@ namespace OOAD_PROJECT_SERVER
                 password = value;
             }
         }
-
+        [DataMember]
         public string Mobile
         {
             get
@@ -80,7 +82,7 @@ namespace OOAD_PROJECT_SERVER
                 mobile = value;
             }
         }
-
+        [DataMember]
         public string Type
         {
             get
@@ -93,7 +95,7 @@ namespace OOAD_PROJECT_SERVER
                 type = value;
             }
         }
-
+        [DataMember]
         public Image Dp
         {
             get
@@ -106,7 +108,7 @@ namespace OOAD_PROJECT_SERVER
                 dp = value;
             }
         }
-
+        [DataMember]
         public string Secretq
         {
             get
@@ -119,7 +121,7 @@ namespace OOAD_PROJECT_SERVER
                 secretq = value;
             }
         }
-
+        [DataMember]
         public string Secreta
         {
             get
@@ -134,7 +136,7 @@ namespace OOAD_PROJECT_SERVER
         }
 
 
-
+        [DataMember]
         public string Adress
         {
             get
@@ -147,7 +149,7 @@ namespace OOAD_PROJECT_SERVER
                 adress = value;
             }
         }
-
+        [DataMember]
         public long Id
         {
             get
@@ -160,7 +162,7 @@ namespace OOAD_PROJECT_SERVER
                 id = value;
             }
         }
-
+        [DataMember]
         public double Longitude
         {
             get
@@ -173,7 +175,7 @@ namespace OOAD_PROJECT_SERVER
                 longitude = value;
             }
         }
-
+        [DataMember]
         public double Latitude
         {
             get
@@ -184,6 +186,32 @@ namespace OOAD_PROJECT_SERVER
             set
             {
                 latitude = value;
+            }
+        }
+        [DataMember]
+        public List<classPharmacyProducts> Productdb
+        {
+            get
+            {
+                return productdb;
+            }
+
+            set
+            {
+                productdb = value;
+            }
+        }
+        [DataMember]
+        public List<classCartItem> Order
+        {
+            get
+            {
+                return order;
+            }
+
+            set
+            {
+                order = value;
             }
         }
     }

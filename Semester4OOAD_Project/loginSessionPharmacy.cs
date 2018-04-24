@@ -8,7 +8,7 @@ namespace Semester4OOAD_Project
 {
     class loginSessionPharmacy
     {
-        public static classPharmacy session=null;
+        public static network.classPharmacy session=null;
         
     }
 }

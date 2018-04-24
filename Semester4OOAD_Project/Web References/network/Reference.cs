@@ -23,7 +23,7 @@ namespace Semester4OOAD_Project.network {
     
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Web.Services.WebServiceBindingAttribute(Name="BasicHttpBinding_IService1", Namespace="http://tempuri.org/")]
@@ -37,7 +37,71 @@ namespace Semester4OOAD_Project.network {
         
         private System.Threading.SendOrPostCallback getAllClientsOperationCompleted;
         
-        private System.Threading.SendOrPostCallback update_admin_profileOperationCompleted;
+        private System.Threading.SendOrPostCallback initiateOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_admin_objOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback update_adminOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_exist_cleintOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback register_clientOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_exist_doctorOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback register_doctorOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_exist_hospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback register_hospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_exist_PharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback register_PharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback getAllDoctorsOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback getAllHospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback getAllPharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_valid_clientOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_valid_doctorOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_valid_hospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback is_valid_pharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_doctorOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_hospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_pharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback set_client_locationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback set_doctor_locationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback set_pharmacy_locationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback set_hospital_locationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback update_doctorOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback set_doctor_specializationOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_Ppharmacy_products_dbOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback add_pharmacy_productOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback get_ordersOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback update_PharmacyOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback update_hospitalOperationCompleted;
+        
+        private System.Threading.SendOrPostCallback update_clientOperationCompleted;
         
         private bool useDefaultCredentialsSetExplicitly;
         
@@ -90,7 +154,103 @@ namespace Semester4OOAD_Project.network {
         public event getAllClientsCompletedEventHandler getAllClientsCompleted;
         
         /// <remarks/>
-        public event update_admin_profileCompletedEventHandler update_admin_profileCompleted;
+        public event initiateCompletedEventHandler initiateCompleted;
+        
+        /// <remarks/>
+        public event get_admin_objCompletedEventHandler get_admin_objCompleted;
+        
+        /// <remarks/>
+        public event update_adminCompletedEventHandler update_adminCompleted;
+        
+        /// <remarks/>
+        public event is_exist_cleintCompletedEventHandler is_exist_cleintCompleted;
+        
+        /// <remarks/>
+        public event register_clientCompletedEventHandler register_clientCompleted;
+        
+        /// <remarks/>
+        public event is_exist_doctorCompletedEventHandler is_exist_doctorCompleted;
+        
+        /// <remarks/>
+        public event register_doctorCompletedEventHandler register_doctorCompleted;
+        
+        /// <remarks/>
+        public event is_exist_hospitalCompletedEventHandler is_exist_hospitalCompleted;
+        
+        /// <remarks/>
+        public event register_hospitalCompletedEventHandler register_hospitalCompleted;
+        
+        /// <remarks/>
+        public event is_exist_PharmacyCompletedEventHandler is_exist_PharmacyCompleted;
+        
+        /// <remarks/>
+        public event register_PharmacyCompletedEventHandler register_PharmacyCompleted;
+        
+        /// <remarks/>
+        public event getAllDoctorsCompletedEventHandler getAllDoctorsCompleted;
+        
+        /// <remarks/>
+        public event getAllHospitalCompletedEventHandler getAllHospitalCompleted;
+        
+        /// <remarks/>
+        public event getAllPharmacyCompletedEventHandler getAllPharmacyCompleted;
+        
+        /// <remarks/>
+        public event is_valid_clientCompletedEventHandler is_valid_clientCompleted;
+        
+        /// <remarks/>
+        public event is_valid_doctorCompletedEventHandler is_valid_doctorCompleted;
+        
+        /// <remarks/>
+        public event is_valid_hospitalCompletedEventHandler is_valid_hospitalCompleted;
+        
+        /// <remarks/>
+        public event is_valid_pharmacyCompletedEventHandler is_valid_pharmacyCompleted;
+        
+        /// <remarks/>
+        public event get_doctorCompletedEventHandler get_doctorCompleted;
+        
+        /// <remarks/>
+        public event get_hospitalCompletedEventHandler get_hospitalCompleted;
+        
+        /// <remarks/>
+        public event get_pharmacyCompletedEventHandler get_pharmacyCompleted;
+        
+        /// <remarks/>
+        public event set_client_locationCompletedEventHandler set_client_locationCompleted;
+        
+        /// <remarks/>
+        public event set_doctor_locationCompletedEventHandler set_doctor_locationCompleted;
+        
+        /// <remarks/>
+        public event set_pharmacy_locationCompletedEventHandler set_pharmacy_locationCompleted;
+        
+        /// <remarks/>
+        public event set_hospital_locationCompletedEventHandler set_hospital_locationCompleted;
+        
+        /// <remarks/>
+        public event update_doctorCompletedEventHandler update_doctorCompleted;
+        
+        /// <remarks/>
+        public event set_doctor_specializationCompletedEventHandler set_doctor_specializationCompleted;
+        
+        /// <remarks/>
+        public event get_Ppharmacy_products_dbCompletedEventHandler get_Ppharmacy_products_dbCompleted;
+        
+        /// <remarks/>
+        public event add_pharmacy_productCompletedEventHandler add_pharmacy_productCompleted;
+        
+        /// <remarks/>
+        public event get_ordersCompletedEventHandler get_ordersCompleted;
+        
+        /// <remarks/>
+        public event update_PharmacyCompletedEventHandler update_PharmacyCompleted;
+        
+        /// <remarks/>
+        public event update_hospitalCompletedEventHandler update_hospitalCompleted;
+        
+        /// <remarks/>
+        public event update_clientCompletedEventHandler update_clientCompleted;
         
         /// <remarks/>
         [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/GetData", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
@@ -214,38 +374,1097 @@ namespace Semester4OOAD_Project.network {
         }
         
         /// <remarks/>
-        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_admin_profile", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
-        public void update_admin_profile([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string namem, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
-            this.Invoke("update_admin_profile", new object[] {
-                        namem,
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/initiate", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void initiate() {
+            this.Invoke("initiate", new object[0]);
+        }
+        
+        /// <remarks/>
+        public void initiateAsync() {
+            this.initiateAsync(null);
+        }
+        
+        /// <remarks/>
+        public void initiateAsync(object userState) {
+            if ((this.initiateOperationCompleted == null)) {
+                this.initiateOperationCompleted = new System.Threading.SendOrPostCallback(this.OninitiateOperationCompleted);
+            }
+            this.InvokeAsync("initiate", new object[0], this.initiateOperationCompleted, userState);
+        }
+        
+        private void OninitiateOperationCompleted(object arg) {
+            if ((this.initiateCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.initiateCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_admin_obj", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public classAdmin get_admin_obj() {
+            object[] results = this.Invoke("get_admin_obj", new object[0]);
+            return ((classAdmin)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_admin_objAsync() {
+            this.get_admin_objAsync(null);
+        }
+        
+        /// <remarks/>
+        public void get_admin_objAsync(object userState) {
+            if ((this.get_admin_objOperationCompleted == null)) {
+                this.get_admin_objOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_admin_objOperationCompleted);
+            }
+            this.InvokeAsync("get_admin_obj", new object[0], this.get_admin_objOperationCompleted, userState);
+        }
+        
+        private void Onget_admin_objOperationCompleted(object arg) {
+            if ((this.get_admin_objCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_admin_objCompleted(this, new get_admin_objCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_admin", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void update_admin([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string adress) {
+            this.Invoke("update_admin", new object[] {
+                        name,
                         password,
                         number,
+                        adress});
+        }
+        
+        /// <remarks/>
+        public void update_adminAsync(string name, string password, string number, string adress) {
+            this.update_adminAsync(name, password, number, adress, null);
+        }
+        
+        /// <remarks/>
+        public void update_adminAsync(string name, string password, string number, string adress, object userState) {
+            if ((this.update_adminOperationCompleted == null)) {
+                this.update_adminOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_adminOperationCompleted);
+            }
+            this.InvokeAsync("update_admin", new object[] {
+                        name,
+                        password,
+                        number,
+                        adress}, this.update_adminOperationCompleted, userState);
+        }
+        
+        private void Onupdate_adminOperationCompleted(object arg) {
+            if ((this.update_adminCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.update_adminCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_exist_cleint", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_exist_cleint([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, out bool is_exist_cleintResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_exist_cleintResultSpecified) {
+            object[] results = this.Invoke("is_exist_cleint", new object[] {
+                        email});
+            is_exist_cleintResult = ((bool)(results[0]));
+            is_exist_cleintResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_exist_cleintAsync(string email) {
+            this.is_exist_cleintAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void is_exist_cleintAsync(string email, object userState) {
+            if ((this.is_exist_cleintOperationCompleted == null)) {
+                this.is_exist_cleintOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_exist_cleintOperationCompleted);
+            }
+            this.InvokeAsync("is_exist_cleint", new object[] {
+                        email}, this.is_exist_cleintOperationCompleted, userState);
+        }
+        
+        private void Onis_exist_cleintOperationCompleted(object arg) {
+            if ((this.is_exist_cleintCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_exist_cleintCompleted(this, new is_exist_cleintCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/register_client", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void register_client([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("register_client", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
                         sq,
                         sa});
         }
         
         /// <remarks/>
-        public void update_admin_profileAsync(string namem, string password, string number, string sq, string sa) {
-            this.update_admin_profileAsync(namem, password, number, sq, sa, null);
+        public void register_clientAsync(string name, string email, string password, string number, string type, string sq, string sa) {
+            this.register_clientAsync(name, email, password, number, type, sq, sa, null);
         }
         
         /// <remarks/>
-        public void update_admin_profileAsync(string namem, string password, string number, string sq, string sa, object userState) {
-            if ((this.update_admin_profileOperationCompleted == null)) {
-                this.update_admin_profileOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_admin_profileOperationCompleted);
+        public void register_clientAsync(string name, string email, string password, string number, string type, string sq, string sa, object userState) {
+            if ((this.register_clientOperationCompleted == null)) {
+                this.register_clientOperationCompleted = new System.Threading.SendOrPostCallback(this.Onregister_clientOperationCompleted);
             }
-            this.InvokeAsync("update_admin_profile", new object[] {
-                        namem,
+            this.InvokeAsync("register_client", new object[] {
+                        name,
+                        email,
                         password,
                         number,
+                        type,
                         sq,
-                        sa}, this.update_admin_profileOperationCompleted, userState);
+                        sa}, this.register_clientOperationCompleted, userState);
         }
         
-        private void Onupdate_admin_profileOperationCompleted(object arg) {
-            if ((this.update_admin_profileCompleted != null)) {
+        private void Onregister_clientOperationCompleted(object arg) {
+            if ((this.register_clientCompleted != null)) {
                 System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
-                this.update_admin_profileCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+                this.register_clientCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_exist_doctor", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_exist_doctor([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, out bool is_exist_doctorResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_exist_doctorResultSpecified) {
+            object[] results = this.Invoke("is_exist_doctor", new object[] {
+                        email});
+            is_exist_doctorResult = ((bool)(results[0]));
+            is_exist_doctorResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_exist_doctorAsync(string email) {
+            this.is_exist_doctorAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void is_exist_doctorAsync(string email, object userState) {
+            if ((this.is_exist_doctorOperationCompleted == null)) {
+                this.is_exist_doctorOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_exist_doctorOperationCompleted);
+            }
+            this.InvokeAsync("is_exist_doctor", new object[] {
+                        email}, this.is_exist_doctorOperationCompleted, userState);
+        }
+        
+        private void Onis_exist_doctorOperationCompleted(object arg) {
+            if ((this.is_exist_doctorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_exist_doctorCompleted(this, new is_exist_doctorCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/register_doctor", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void register_doctor([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("register_doctor", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void register_doctorAsync(string name, string email, string password, string number, string type, string sq, string sa) {
+            this.register_doctorAsync(name, email, password, number, type, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void register_doctorAsync(string name, string email, string password, string number, string type, string sq, string sa, object userState) {
+            if ((this.register_doctorOperationCompleted == null)) {
+                this.register_doctorOperationCompleted = new System.Threading.SendOrPostCallback(this.Onregister_doctorOperationCompleted);
+            }
+            this.InvokeAsync("register_doctor", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa}, this.register_doctorOperationCompleted, userState);
+        }
+        
+        private void Onregister_doctorOperationCompleted(object arg) {
+            if ((this.register_doctorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.register_doctorCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_exist_hospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_exist_hospital([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, out bool is_exist_hospitalResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_exist_hospitalResultSpecified) {
+            object[] results = this.Invoke("is_exist_hospital", new object[] {
+                        email});
+            is_exist_hospitalResult = ((bool)(results[0]));
+            is_exist_hospitalResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_exist_hospitalAsync(string email) {
+            this.is_exist_hospitalAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void is_exist_hospitalAsync(string email, object userState) {
+            if ((this.is_exist_hospitalOperationCompleted == null)) {
+                this.is_exist_hospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_exist_hospitalOperationCompleted);
+            }
+            this.InvokeAsync("is_exist_hospital", new object[] {
+                        email}, this.is_exist_hospitalOperationCompleted, userState);
+        }
+        
+        private void Onis_exist_hospitalOperationCompleted(object arg) {
+            if ((this.is_exist_hospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_exist_hospitalCompleted(this, new is_exist_hospitalCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/register_hospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void register_hospital([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("register_hospital", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void register_hospitalAsync(string name, string email, string password, string number, string type, string sq, string sa) {
+            this.register_hospitalAsync(name, email, password, number, type, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void register_hospitalAsync(string name, string email, string password, string number, string type, string sq, string sa, object userState) {
+            if ((this.register_hospitalOperationCompleted == null)) {
+                this.register_hospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.Onregister_hospitalOperationCompleted);
+            }
+            this.InvokeAsync("register_hospital", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa}, this.register_hospitalOperationCompleted, userState);
+        }
+        
+        private void Onregister_hospitalOperationCompleted(object arg) {
+            if ((this.register_hospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.register_hospitalCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_exist_Pharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_exist_Pharmacy([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, out bool is_exist_PharmacyResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_exist_PharmacyResultSpecified) {
+            object[] results = this.Invoke("is_exist_Pharmacy", new object[] {
+                        email});
+            is_exist_PharmacyResult = ((bool)(results[0]));
+            is_exist_PharmacyResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_exist_PharmacyAsync(string email) {
+            this.is_exist_PharmacyAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void is_exist_PharmacyAsync(string email, object userState) {
+            if ((this.is_exist_PharmacyOperationCompleted == null)) {
+                this.is_exist_PharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_exist_PharmacyOperationCompleted);
+            }
+            this.InvokeAsync("is_exist_Pharmacy", new object[] {
+                        email}, this.is_exist_PharmacyOperationCompleted, userState);
+        }
+        
+        private void Onis_exist_PharmacyOperationCompleted(object arg) {
+            if ((this.is_exist_PharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_exist_PharmacyCompleted(this, new is_exist_PharmacyCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/register_Pharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void register_Pharmacy([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string type, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("register_Pharmacy", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void register_PharmacyAsync(string name, string email, string password, string number, string type, string sq, string sa) {
+            this.register_PharmacyAsync(name, email, password, number, type, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void register_PharmacyAsync(string name, string email, string password, string number, string type, string sq, string sa, object userState) {
+            if ((this.register_PharmacyOperationCompleted == null)) {
+                this.register_PharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.Onregister_PharmacyOperationCompleted);
+            }
+            this.InvokeAsync("register_Pharmacy", new object[] {
+                        name,
+                        email,
+                        password,
+                        number,
+                        type,
+                        sq,
+                        sa}, this.register_PharmacyOperationCompleted, userState);
+        }
+        
+        private void Onregister_PharmacyOperationCompleted(object arg) {
+            if ((this.register_PharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.register_PharmacyCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/getAllDoctors", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+        public classDoctor[] getAllDoctors() {
+            object[] results = this.Invoke("getAllDoctors", new object[0]);
+            return ((classDoctor[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void getAllDoctorsAsync() {
+            this.getAllDoctorsAsync(null);
+        }
+        
+        /// <remarks/>
+        public void getAllDoctorsAsync(object userState) {
+            if ((this.getAllDoctorsOperationCompleted == null)) {
+                this.getAllDoctorsOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetAllDoctorsOperationCompleted);
+            }
+            this.InvokeAsync("getAllDoctors", new object[0], this.getAllDoctorsOperationCompleted, userState);
+        }
+        
+        private void OngetAllDoctorsOperationCompleted(object arg) {
+            if ((this.getAllDoctorsCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.getAllDoctorsCompleted(this, new getAllDoctorsCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/getAllHospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+        public classHospital[] getAllHospital() {
+            object[] results = this.Invoke("getAllHospital", new object[0]);
+            return ((classHospital[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void getAllHospitalAsync() {
+            this.getAllHospitalAsync(null);
+        }
+        
+        /// <remarks/>
+        public void getAllHospitalAsync(object userState) {
+            if ((this.getAllHospitalOperationCompleted == null)) {
+                this.getAllHospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetAllHospitalOperationCompleted);
+            }
+            this.InvokeAsync("getAllHospital", new object[0], this.getAllHospitalOperationCompleted, userState);
+        }
+        
+        private void OngetAllHospitalOperationCompleted(object arg) {
+            if ((this.getAllHospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.getAllHospitalCompleted(this, new getAllHospitalCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/getAllPharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+        public classPharmacy[] getAllPharmacy() {
+            object[] results = this.Invoke("getAllPharmacy", new object[0]);
+            return ((classPharmacy[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void getAllPharmacyAsync() {
+            this.getAllPharmacyAsync(null);
+        }
+        
+        /// <remarks/>
+        public void getAllPharmacyAsync(object userState) {
+            if ((this.getAllPharmacyOperationCompleted == null)) {
+                this.getAllPharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.OngetAllPharmacyOperationCompleted);
+            }
+            this.InvokeAsync("getAllPharmacy", new object[0], this.getAllPharmacyOperationCompleted, userState);
+        }
+        
+        private void OngetAllPharmacyOperationCompleted(object arg) {
+            if ((this.getAllPharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.getAllPharmacyCompleted(this, new getAllPharmacyCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_valid_client", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_valid_client([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, out bool is_valid_clientResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_valid_clientResultSpecified) {
+            object[] results = this.Invoke("is_valid_client", new object[] {
+                        email,
+                        pass});
+            is_valid_clientResult = ((bool)(results[0]));
+            is_valid_clientResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_valid_clientAsync(string email, string pass) {
+            this.is_valid_clientAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void is_valid_clientAsync(string email, string pass, object userState) {
+            if ((this.is_valid_clientOperationCompleted == null)) {
+                this.is_valid_clientOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_valid_clientOperationCompleted);
+            }
+            this.InvokeAsync("is_valid_client", new object[] {
+                        email,
+                        pass}, this.is_valid_clientOperationCompleted, userState);
+        }
+        
+        private void Onis_valid_clientOperationCompleted(object arg) {
+            if ((this.is_valid_clientCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_valid_clientCompleted(this, new is_valid_clientCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_valid_doctor", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_valid_doctor([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, out bool is_valid_doctorResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_valid_doctorResultSpecified) {
+            object[] results = this.Invoke("is_valid_doctor", new object[] {
+                        email,
+                        pass});
+            is_valid_doctorResult = ((bool)(results[0]));
+            is_valid_doctorResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_valid_doctorAsync(string email, string pass) {
+            this.is_valid_doctorAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void is_valid_doctorAsync(string email, string pass, object userState) {
+            if ((this.is_valid_doctorOperationCompleted == null)) {
+                this.is_valid_doctorOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_valid_doctorOperationCompleted);
+            }
+            this.InvokeAsync("is_valid_doctor", new object[] {
+                        email,
+                        pass}, this.is_valid_doctorOperationCompleted, userState);
+        }
+        
+        private void Onis_valid_doctorOperationCompleted(object arg) {
+            if ((this.is_valid_doctorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_valid_doctorCompleted(this, new is_valid_doctorCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_valid_hospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_valid_hospital([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, out bool is_valid_hospitalResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_valid_hospitalResultSpecified) {
+            object[] results = this.Invoke("is_valid_hospital", new object[] {
+                        email,
+                        pass});
+            is_valid_hospitalResult = ((bool)(results[0]));
+            is_valid_hospitalResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_valid_hospitalAsync(string email, string pass) {
+            this.is_valid_hospitalAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void is_valid_hospitalAsync(string email, string pass, object userState) {
+            if ((this.is_valid_hospitalOperationCompleted == null)) {
+                this.is_valid_hospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_valid_hospitalOperationCompleted);
+            }
+            this.InvokeAsync("is_valid_hospital", new object[] {
+                        email,
+                        pass}, this.is_valid_hospitalOperationCompleted, userState);
+        }
+        
+        private void Onis_valid_hospitalOperationCompleted(object arg) {
+            if ((this.is_valid_hospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_valid_hospitalCompleted(this, new is_valid_hospitalCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/is_valid_pharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void is_valid_pharmacy([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, out bool is_valid_pharmacyResult, [System.Xml.Serialization.XmlIgnoreAttribute()] out bool is_valid_pharmacyResultSpecified) {
+            object[] results = this.Invoke("is_valid_pharmacy", new object[] {
+                        email,
+                        pass});
+            is_valid_pharmacyResult = ((bool)(results[0]));
+            is_valid_pharmacyResultSpecified = ((bool)(results[1]));
+        }
+        
+        /// <remarks/>
+        public void is_valid_pharmacyAsync(string email, string pass) {
+            this.is_valid_pharmacyAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void is_valid_pharmacyAsync(string email, string pass, object userState) {
+            if ((this.is_valid_pharmacyOperationCompleted == null)) {
+                this.is_valid_pharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.Onis_valid_pharmacyOperationCompleted);
+            }
+            this.InvokeAsync("is_valid_pharmacy", new object[] {
+                        email,
+                        pass}, this.is_valid_pharmacyOperationCompleted, userState);
+        }
+        
+        private void Onis_valid_pharmacyOperationCompleted(object arg) {
+            if ((this.is_valid_pharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.is_valid_pharmacyCompleted(this, new is_valid_pharmacyCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_doctor", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public classDoctor get_doctor([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass) {
+            object[] results = this.Invoke("get_doctor", new object[] {
+                        email,
+                        pass});
+            return ((classDoctor)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_doctorAsync(string email, string pass) {
+            this.get_doctorAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void get_doctorAsync(string email, string pass, object userState) {
+            if ((this.get_doctorOperationCompleted == null)) {
+                this.get_doctorOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_doctorOperationCompleted);
+            }
+            this.InvokeAsync("get_doctor", new object[] {
+                        email,
+                        pass}, this.get_doctorOperationCompleted, userState);
+        }
+        
+        private void Onget_doctorOperationCompleted(object arg) {
+            if ((this.get_doctorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_doctorCompleted(this, new get_doctorCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_hospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public classHospital get_hospital([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass) {
+            object[] results = this.Invoke("get_hospital", new object[] {
+                        email,
+                        pass});
+            return ((classHospital)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_hospitalAsync(string email, string pass) {
+            this.get_hospitalAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void get_hospitalAsync(string email, string pass, object userState) {
+            if ((this.get_hospitalOperationCompleted == null)) {
+                this.get_hospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_hospitalOperationCompleted);
+            }
+            this.InvokeAsync("get_hospital", new object[] {
+                        email,
+                        pass}, this.get_hospitalOperationCompleted, userState);
+        }
+        
+        private void Onget_hospitalOperationCompleted(object arg) {
+            if ((this.get_hospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_hospitalCompleted(this, new get_hospitalCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_pharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public classPharmacy get_pharmacy([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass) {
+            object[] results = this.Invoke("get_pharmacy", new object[] {
+                        email,
+                        pass});
+            return ((classPharmacy)(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_pharmacyAsync(string email, string pass) {
+            this.get_pharmacyAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void get_pharmacyAsync(string email, string pass, object userState) {
+            if ((this.get_pharmacyOperationCompleted == null)) {
+                this.get_pharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_pharmacyOperationCompleted);
+            }
+            this.InvokeAsync("get_pharmacy", new object[] {
+                        email,
+                        pass}, this.get_pharmacyOperationCompleted, userState);
+        }
+        
+        private void Onget_pharmacyOperationCompleted(object arg) {
+            if ((this.get_pharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_pharmacyCompleted(this, new get_pharmacyCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/set_client_location", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void set_client_location([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email) {
+            this.Invoke("set_client_location", new object[] {
+                        email});
+        }
+        
+        /// <remarks/>
+        public void set_client_locationAsync(string email) {
+            this.set_client_locationAsync(email, null);
+        }
+        
+        /// <remarks/>
+        public void set_client_locationAsync(string email, object userState) {
+            if ((this.set_client_locationOperationCompleted == null)) {
+                this.set_client_locationOperationCompleted = new System.Threading.SendOrPostCallback(this.Onset_client_locationOperationCompleted);
+            }
+            this.InvokeAsync("set_client_location", new object[] {
+                        email}, this.set_client_locationOperationCompleted, userState);
+        }
+        
+        private void Onset_client_locationOperationCompleted(object arg) {
+            if ((this.set_client_locationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.set_client_locationCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/set_doctor_location", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void set_doctor_location([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string longi, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string lati) {
+            this.Invoke("set_doctor_location", new object[] {
+                        email,
+                        longi,
+                        lati});
+        }
+        
+        /// <remarks/>
+        public void set_doctor_locationAsync(string email, string longi, string lati) {
+            this.set_doctor_locationAsync(email, longi, lati, null);
+        }
+        
+        /// <remarks/>
+        public void set_doctor_locationAsync(string email, string longi, string lati, object userState) {
+            if ((this.set_doctor_locationOperationCompleted == null)) {
+                this.set_doctor_locationOperationCompleted = new System.Threading.SendOrPostCallback(this.Onset_doctor_locationOperationCompleted);
+            }
+            this.InvokeAsync("set_doctor_location", new object[] {
+                        email,
+                        longi,
+                        lati}, this.set_doctor_locationOperationCompleted, userState);
+        }
+        
+        private void Onset_doctor_locationOperationCompleted(object arg) {
+            if ((this.set_doctor_locationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.set_doctor_locationCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/set_pharmacy_location", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void set_pharmacy_location([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string longi, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string lati) {
+            this.Invoke("set_pharmacy_location", new object[] {
+                        email,
+                        longi,
+                        lati});
+        }
+        
+        /// <remarks/>
+        public void set_pharmacy_locationAsync(string email, string longi, string lati) {
+            this.set_pharmacy_locationAsync(email, longi, lati, null);
+        }
+        
+        /// <remarks/>
+        public void set_pharmacy_locationAsync(string email, string longi, string lati, object userState) {
+            if ((this.set_pharmacy_locationOperationCompleted == null)) {
+                this.set_pharmacy_locationOperationCompleted = new System.Threading.SendOrPostCallback(this.Onset_pharmacy_locationOperationCompleted);
+            }
+            this.InvokeAsync("set_pharmacy_location", new object[] {
+                        email,
+                        longi,
+                        lati}, this.set_pharmacy_locationOperationCompleted, userState);
+        }
+        
+        private void Onset_pharmacy_locationOperationCompleted(object arg) {
+            if ((this.set_pharmacy_locationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.set_pharmacy_locationCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/set_hospital_location", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void set_hospital_location([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string longi, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string lati) {
+            this.Invoke("set_hospital_location", new object[] {
+                        email,
+                        longi,
+                        lati});
+        }
+        
+        /// <remarks/>
+        public void set_hospital_locationAsync(string email, string longi, string lati) {
+            this.set_hospital_locationAsync(email, longi, lati, null);
+        }
+        
+        /// <remarks/>
+        public void set_hospital_locationAsync(string email, string longi, string lati, object userState) {
+            if ((this.set_hospital_locationOperationCompleted == null)) {
+                this.set_hospital_locationOperationCompleted = new System.Threading.SendOrPostCallback(this.Onset_hospital_locationOperationCompleted);
+            }
+            this.InvokeAsync("set_hospital_location", new object[] {
+                        email,
+                        longi,
+                        lati}, this.set_hospital_locationOperationCompleted, userState);
+        }
+        
+        private void Onset_hospital_locationOperationCompleted(object arg) {
+            if ((this.set_hospital_locationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.set_hospital_locationCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_doctor", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void update_doctor([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string adress, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("update_doctor", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void update_doctorAsync(string email, string name, string password, string number, string adress, string sq, string sa) {
+            this.update_doctorAsync(email, name, password, number, adress, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void update_doctorAsync(string email, string name, string password, string number, string adress, string sq, string sa, object userState) {
+            if ((this.update_doctorOperationCompleted == null)) {
+                this.update_doctorOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_doctorOperationCompleted);
+            }
+            this.InvokeAsync("update_doctor", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa}, this.update_doctorOperationCompleted, userState);
+        }
+        
+        private void Onupdate_doctorOperationCompleted(object arg) {
+            if ((this.update_doctorCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.update_doctorCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/set_doctor_specialization", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void set_doctor_specialization([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string spec) {
+            this.Invoke("set_doctor_specialization", new object[] {
+                        email,
+                        spec});
+        }
+        
+        /// <remarks/>
+        public void set_doctor_specializationAsync(string email, string spec) {
+            this.set_doctor_specializationAsync(email, spec, null);
+        }
+        
+        /// <remarks/>
+        public void set_doctor_specializationAsync(string email, string spec, object userState) {
+            if ((this.set_doctor_specializationOperationCompleted == null)) {
+                this.set_doctor_specializationOperationCompleted = new System.Threading.SendOrPostCallback(this.Onset_doctor_specializationOperationCompleted);
+            }
+            this.InvokeAsync("set_doctor_specialization", new object[] {
+                        email,
+                        spec}, this.set_doctor_specializationOperationCompleted, userState);
+        }
+        
+        private void Onset_doctor_specializationOperationCompleted(object arg) {
+            if ((this.set_doctor_specializationCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.set_doctor_specializationCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_Ppharmacy_products_db", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+        public classPharmacyProducts[] get_Ppharmacy_products_db([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass) {
+            object[] results = this.Invoke("get_Ppharmacy_products_db", new object[] {
+                        email,
+                        pass});
+            return ((classPharmacyProducts[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_Ppharmacy_products_dbAsync(string email, string pass) {
+            this.get_Ppharmacy_products_dbAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void get_Ppharmacy_products_dbAsync(string email, string pass, object userState) {
+            if ((this.get_Ppharmacy_products_dbOperationCompleted == null)) {
+                this.get_Ppharmacy_products_dbOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_Ppharmacy_products_dbOperationCompleted);
+            }
+            this.InvokeAsync("get_Ppharmacy_products_db", new object[] {
+                        email,
+                        pass}, this.get_Ppharmacy_products_dbOperationCompleted, userState);
+        }
+        
+        private void Onget_Ppharmacy_products_dbOperationCompleted(object arg) {
+            if ((this.get_Ppharmacy_products_dbCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_Ppharmacy_products_dbCompleted(this, new get_Ppharmacy_products_dbCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/add_pharmacy_product", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void add_pharmacy_product([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string product, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string quantity, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string price) {
+            this.Invoke("add_pharmacy_product", new object[] {
+                        email,
+                        pass,
+                        product,
+                        quantity,
+                        price});
+        }
+        
+        /// <remarks/>
+        public void add_pharmacy_productAsync(string email, string pass, string product, string quantity, string price) {
+            this.add_pharmacy_productAsync(email, pass, product, quantity, price, null);
+        }
+        
+        /// <remarks/>
+        public void add_pharmacy_productAsync(string email, string pass, string product, string quantity, string price, object userState) {
+            if ((this.add_pharmacy_productOperationCompleted == null)) {
+                this.add_pharmacy_productOperationCompleted = new System.Threading.SendOrPostCallback(this.Onadd_pharmacy_productOperationCompleted);
+            }
+            this.InvokeAsync("add_pharmacy_product", new object[] {
+                        email,
+                        pass,
+                        product,
+                        quantity,
+                        price}, this.add_pharmacy_productOperationCompleted, userState);
+        }
+        
+        private void Onadd_pharmacy_productOperationCompleted(object arg) {
+            if ((this.add_pharmacy_productCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.add_pharmacy_productCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/get_orders", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        [return: System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        [return: System.Xml.Serialization.XmlArrayItemAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+        public classCartItem[] get_orders([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string pass) {
+            object[] results = this.Invoke("get_orders", new object[] {
+                        email,
+                        pass});
+            return ((classCartItem[])(results[0]));
+        }
+        
+        /// <remarks/>
+        public void get_ordersAsync(string email, string pass) {
+            this.get_ordersAsync(email, pass, null);
+        }
+        
+        /// <remarks/>
+        public void get_ordersAsync(string email, string pass, object userState) {
+            if ((this.get_ordersOperationCompleted == null)) {
+                this.get_ordersOperationCompleted = new System.Threading.SendOrPostCallback(this.Onget_ordersOperationCompleted);
+            }
+            this.InvokeAsync("get_orders", new object[] {
+                        email,
+                        pass}, this.get_ordersOperationCompleted, userState);
+        }
+        
+        private void Onget_ordersOperationCompleted(object arg) {
+            if ((this.get_ordersCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.get_ordersCompleted(this, new get_ordersCompletedEventArgs(invokeArgs.Results, invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_Pharmacy", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void update_Pharmacy([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string adress, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("update_Pharmacy", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void update_PharmacyAsync(string email, string name, string password, string number, string adress, string sq, string sa) {
+            this.update_PharmacyAsync(email, name, password, number, adress, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void update_PharmacyAsync(string email, string name, string password, string number, string adress, string sq, string sa, object userState) {
+            if ((this.update_PharmacyOperationCompleted == null)) {
+                this.update_PharmacyOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_PharmacyOperationCompleted);
+            }
+            this.InvokeAsync("update_Pharmacy", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa}, this.update_PharmacyOperationCompleted, userState);
+        }
+        
+        private void Onupdate_PharmacyOperationCompleted(object arg) {
+            if ((this.update_PharmacyCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.update_PharmacyCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_hospital", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void update_hospital([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string adress, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("update_hospital", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void update_hospitalAsync(string email, string name, string password, string number, string adress, string sq, string sa) {
+            this.update_hospitalAsync(email, name, password, number, adress, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void update_hospitalAsync(string email, string name, string password, string number, string adress, string sq, string sa, object userState) {
+            if ((this.update_hospitalOperationCompleted == null)) {
+                this.update_hospitalOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_hospitalOperationCompleted);
+            }
+            this.InvokeAsync("update_hospital", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa}, this.update_hospitalOperationCompleted, userState);
+        }
+        
+        private void Onupdate_hospitalOperationCompleted(object arg) {
+            if ((this.update_hospitalCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.update_hospitalCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
+            }
+        }
+        
+        /// <remarks/>
+        [System.Web.Services.Protocols.SoapDocumentMethodAttribute("http://tempuri.org/IService1/update_client", RequestNamespace="http://tempuri.org/", ResponseNamespace="http://tempuri.org/", Use=System.Web.Services.Description.SoapBindingUse.Literal, ParameterStyle=System.Web.Services.Protocols.SoapParameterStyle.Wrapped)]
+        public void update_client([System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string email, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string name, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string password, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string number, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string adress, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sq, [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)] string sa) {
+            this.Invoke("update_client", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa});
+        }
+        
+        /// <remarks/>
+        public void update_clientAsync(string email, string name, string password, string number, string adress, string sq, string sa) {
+            this.update_clientAsync(email, name, password, number, adress, sq, sa, null);
+        }
+        
+        /// <remarks/>
+        public void update_clientAsync(string email, string name, string password, string number, string adress, string sq, string sa, object userState) {
+            if ((this.update_clientOperationCompleted == null)) {
+                this.update_clientOperationCompleted = new System.Threading.SendOrPostCallback(this.Onupdate_clientOperationCompleted);
+            }
+            this.InvokeAsync("update_client", new object[] {
+                        email,
+                        name,
+                        password,
+                        number,
+                        adress,
+                        sq,
+                        sa}, this.update_clientOperationCompleted, userState);
+        }
+        
+        private void Onupdate_clientOperationCompleted(object arg) {
+            if ((this.update_clientCompleted != null)) {
+                System.Web.Services.Protocols.InvokeCompletedEventArgs invokeArgs = ((System.Web.Services.Protocols.InvokeCompletedEventArgs)(arg));
+                this.update_clientCompleted(this, new System.ComponentModel.AsyncCompletedEventArgs(invokeArgs.Error, invokeArgs.Cancelled, invokeArgs.UserState));
             }
         }
         
@@ -269,7 +1488,7 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -316,7 +1535,443 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classPharmacyProducts {
+        
+        private int product_idField;
+        
+        private bool product_idFieldSpecified;
+        
+        private string product_nameField;
+        
+        private long product_priceField;
+        
+        private bool product_priceFieldSpecified;
+        
+        private long product_quantityField;
+        
+        private bool product_quantityFieldSpecified;
+        
+        /// <remarks/>
+        public int Product_id {
+            get {
+                return this.product_idField;
+            }
+            set {
+                this.product_idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Product_idSpecified {
+            get {
+                return this.product_idFieldSpecified;
+            }
+            set {
+                this.product_idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Product_name {
+            get {
+                return this.product_nameField;
+            }
+            set {
+                this.product_nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long Product_price {
+            get {
+                return this.product_priceField;
+            }
+            set {
+                this.product_priceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Product_priceSpecified {
+            get {
+                return this.product_priceFieldSpecified;
+            }
+            set {
+                this.product_priceFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long Product_quantity {
+            get {
+                return this.product_quantityField;
+            }
+            set {
+                this.product_quantityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Product_quantitySpecified {
+            get {
+                return this.product_quantityFieldSpecified;
+            }
+            set {
+                this.product_quantityFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classCartItem {
+        
+        private string buyar_longitudeField;
+        
+        private string buyer_emailField;
+        
+        private string buyer_latitudeField;
+        
+        private string buyer_nameField;
+        
+        private string buyer_numberField;
+        
+        private string product_orderedField;
+        
+        private int proudct_amoutField;
+        
+        private bool proudct_amoutFieldSpecified;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Buyar_longitude {
+            get {
+                return this.buyar_longitudeField;
+            }
+            set {
+                this.buyar_longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Buyer_email {
+            get {
+                return this.buyer_emailField;
+            }
+            set {
+                this.buyer_emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Buyer_latitude {
+            get {
+                return this.buyer_latitudeField;
+            }
+            set {
+                this.buyer_latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Buyer_name {
+            get {
+                return this.buyer_nameField;
+            }
+            set {
+                this.buyer_nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Buyer_number {
+            get {
+                return this.buyer_numberField;
+            }
+            set {
+                this.buyer_numberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Product_ordered {
+            get {
+                return this.product_orderedField;
+            }
+            set {
+                this.product_orderedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Proudct_amout {
+            get {
+                return this.proudct_amoutField;
+            }
+            set {
+                this.proudct_amoutField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool Proudct_amoutSpecified {
+            get {
+                return this.proudct_amoutFieldSpecified;
+            }
+            set {
+                this.proudct_amoutFieldSpecified = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classPharmacy {
+        
+        private string adressField;
+        
+        private Image dpField;
+        
+        private string emailField;
+        
+        private long idField;
+        
+        private bool idFieldSpecified;
+        
+        private double latitudeField;
+        
+        private bool latitudeFieldSpecified;
+        
+        private double longitudeField;
+        
+        private bool longitudeFieldSpecified;
+        
+        private string mobileField;
+        
+        private string nameField;
+        
+        private classCartItem[] orderField;
+        
+        private string passwordField;
+        
+        private classPharmacyProducts[] productdbField;
+        
+        private string secretaField;
+        
+        private string secretqField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Adress {
+            get {
+                return this.adressField;
+            }
+            set {
+                this.adressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Image Dp {
+            get {
+                return this.dpField;
+            }
+            set {
+                this.dpField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IdSpecified {
+            get {
+                return this.idFieldSpecified;
+            }
+            set {
+                this.idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LatitudeSpecified {
+            get {
+                return this.latitudeFieldSpecified;
+            }
+            set {
+                this.latitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LongitudeSpecified {
+            get {
+                return this.longitudeFieldSpecified;
+            }
+            set {
+                this.longitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public classCartItem[] Order {
+            get {
+                return this.orderField;
+            }
+            set {
+                this.orderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                this.passwordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayAttribute(IsNullable=true)]
+        public classPharmacyProducts[] Productdb {
+            get {
+                return this.productdbField;
+            }
+            set {
+                this.productdbField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secreta {
+            get {
+                return this.secretaField;
+            }
+            set {
+                this.secretaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secretq {
+            get {
+                return this.secretqField;
+            }
+            set {
+                this.secretqField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
@@ -351,12 +2006,12 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2612.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
-    public partial class classClient {
+    public partial class classHospital {
         
         private string adressField;
         
@@ -367,6 +2022,14 @@ namespace Semester4OOAD_Project.network {
         private long idField;
         
         private bool idFieldSpecified;
+        
+        private double latitudeField;
+        
+        private bool latitudeFieldSpecified;
+        
+        private double longitudeField;
+        
+        private bool longitudeFieldSpecified;
         
         private string mobileField;
         
@@ -431,6 +2094,48 @@ namespace Semester4OOAD_Project.network {
             }
             set {
                 this.idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LatitudeSpecified {
+            get {
+                return this.latitudeFieldSpecified;
+            }
+            set {
+                this.latitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LongitudeSpecified {
+            get {
+                return this.longitudeFieldSpecified;
+            }
+            set {
+                this.longitudeFieldSpecified = value;
             }
         }
         
@@ -502,11 +2207,602 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classDoctor {
+        
+        private string adressField;
+        
+        private Image dpField;
+        
+        private string emailField;
+        
+        private long idField;
+        
+        private bool idFieldSpecified;
+        
+        private double latitudeField;
+        
+        private bool latitudeFieldSpecified;
+        
+        private double longitudeField;
+        
+        private bool longitudeFieldSpecified;
+        
+        private string mobileField;
+        
+        private string nameField;
+        
+        private string passwordField;
+        
+        private string secretaField;
+        
+        private string secretqField;
+        
+        private string specializtionField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Adress {
+            get {
+                return this.adressField;
+            }
+            set {
+                this.adressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Image Dp {
+            get {
+                return this.dpField;
+            }
+            set {
+                this.dpField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IdSpecified {
+            get {
+                return this.idFieldSpecified;
+            }
+            set {
+                this.idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LatitudeSpecified {
+            get {
+                return this.latitudeFieldSpecified;
+            }
+            set {
+                this.latitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LongitudeSpecified {
+            get {
+                return this.longitudeFieldSpecified;
+            }
+            set {
+                this.longitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                this.passwordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secreta {
+            get {
+                return this.secretaField;
+            }
+            set {
+                this.secretaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secretq {
+            get {
+                return this.secretqField;
+            }
+            set {
+                this.secretqField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Specializtion {
+            get {
+                return this.specializtionField;
+            }
+            set {
+                this.specializtionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classAdmin {
+        
+        private string adressField;
+        
+        private Image dpField;
+        
+        private string emailField;
+        
+        private double latitudeField;
+        
+        private bool latitudeFieldSpecified;
+        
+        private double longitudeField;
+        
+        private bool longitudeFieldSpecified;
+        
+        private string mobileField;
+        
+        private string nameField;
+        
+        private string passwordField;
+        
+        private string secretaField;
+        
+        private string secretqField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Adress {
+            get {
+                return this.adressField;
+            }
+            set {
+                this.adressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Image Dp {
+            get {
+                return this.dpField;
+            }
+            set {
+                this.dpField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LatitudeSpecified {
+            get {
+                return this.latitudeFieldSpecified;
+            }
+            set {
+                this.latitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LongitudeSpecified {
+            get {
+                return this.longitudeFieldSpecified;
+            }
+            set {
+                this.longitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                this.passwordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secreta {
+            get {
+                return this.secretaField;
+            }
+            set {
+                this.secretaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secretq {
+            get {
+                return this.secretqField;
+            }
+            set {
+                this.secretqField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.7.2558.0")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlTypeAttribute(Namespace="http://schemas.datacontract.org/2004/07/OOAD_PROJECT_SERVER")]
+    public partial class classClient {
+        
+        private string adressField;
+        
+        private Image dpField;
+        
+        private string emailField;
+        
+        private long idField;
+        
+        private bool idFieldSpecified;
+        
+        private double latitudeField;
+        
+        private bool latitudeFieldSpecified;
+        
+        private double longitudeField;
+        
+        private bool longitudeFieldSpecified;
+        
+        private string mobileField;
+        
+        private string nameField;
+        
+        private string passwordField;
+        
+        private string secretaField;
+        
+        private string secretqField;
+        
+        private string typeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Adress {
+            get {
+                return this.adressField;
+            }
+            set {
+                this.adressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public Image Dp {
+            get {
+                return this.dpField;
+            }
+            set {
+                this.dpField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool IdSpecified {
+            get {
+                return this.idFieldSpecified;
+            }
+            set {
+                this.idFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LatitudeSpecified {
+            get {
+                return this.latitudeFieldSpecified;
+            }
+            set {
+                this.latitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        public double Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlIgnoreAttribute()]
+        public bool LongitudeSpecified {
+            get {
+                return this.longitudeFieldSpecified;
+            }
+            set {
+                this.longitudeFieldSpecified = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Password {
+            get {
+                return this.passwordField;
+            }
+            set {
+                this.passwordField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secreta {
+            get {
+                return this.secretaField;
+            }
+            set {
+                this.secretaField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Secretq {
+            get {
+                return this.secretqField;
+            }
+            set {
+                this.secretqField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public string Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataCompletedEventHandler(object sender, GetDataCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -528,11 +2824,11 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void GetDataUsingDataContractCompletedEventHandler(object sender, GetDataUsingDataContractCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class GetDataUsingDataContractCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -554,11 +2850,11 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void clientExistCompletedEventHandler(object sender, clientExistCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class clientExistCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -588,11 +2884,11 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     public delegate void getAllClientsCompletedEventHandler(object sender, getAllClientsCompletedEventArgs e);
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     public partial class getAllClientsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
@@ -614,8 +2910,574 @@ namespace Semester4OOAD_Project.network {
     }
     
     /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2556.0")]
-    public delegate void update_admin_profileCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void initiateCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_admin_objCompletedEventHandler(object sender, get_admin_objCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_admin_objCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_admin_objCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classAdmin Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classAdmin)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void update_adminCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_exist_cleintCompletedEventHandler(object sender, is_exist_cleintCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_exist_cleintCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_exist_cleintCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_exist_cleintResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_exist_cleintResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void register_clientCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_exist_doctorCompletedEventHandler(object sender, is_exist_doctorCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_exist_doctorCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_exist_doctorCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_exist_doctorResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_exist_doctorResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void register_doctorCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_exist_hospitalCompletedEventHandler(object sender, is_exist_hospitalCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_exist_hospitalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_exist_hospitalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_exist_hospitalResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_exist_hospitalResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void register_hospitalCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_exist_PharmacyCompletedEventHandler(object sender, is_exist_PharmacyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_exist_PharmacyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_exist_PharmacyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_exist_PharmacyResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_exist_PharmacyResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void register_PharmacyCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void getAllDoctorsCompletedEventHandler(object sender, getAllDoctorsCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class getAllDoctorsCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal getAllDoctorsCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classDoctor[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classDoctor[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void getAllHospitalCompletedEventHandler(object sender, getAllHospitalCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class getAllHospitalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal getAllHospitalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classHospital[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classHospital[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void getAllPharmacyCompletedEventHandler(object sender, getAllPharmacyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class getAllPharmacyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal getAllPharmacyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classPharmacy[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classPharmacy[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_valid_clientCompletedEventHandler(object sender, is_valid_clientCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_valid_clientCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_valid_clientCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_valid_clientResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_valid_clientResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_valid_doctorCompletedEventHandler(object sender, is_valid_doctorCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_valid_doctorCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_valid_doctorCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_valid_doctorResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_valid_doctorResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_valid_hospitalCompletedEventHandler(object sender, is_valid_hospitalCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_valid_hospitalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_valid_hospitalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_valid_hospitalResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_valid_hospitalResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void is_valid_pharmacyCompletedEventHandler(object sender, is_valid_pharmacyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class is_valid_pharmacyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal is_valid_pharmacyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public bool is_valid_pharmacyResult {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[0]));
+            }
+        }
+        
+        /// <remarks/>
+        public bool is_valid_pharmacyResultSpecified {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((bool)(this.results[1]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_doctorCompletedEventHandler(object sender, get_doctorCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_doctorCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_doctorCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classDoctor Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classDoctor)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_hospitalCompletedEventHandler(object sender, get_hospitalCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_hospitalCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_hospitalCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classHospital Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classHospital)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_pharmacyCompletedEventHandler(object sender, get_pharmacyCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_pharmacyCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_pharmacyCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classPharmacy Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classPharmacy)(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void set_client_locationCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void set_doctor_locationCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void set_pharmacy_locationCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void set_hospital_locationCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void update_doctorCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void set_doctor_specializationCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_Ppharmacy_products_dbCompletedEventHandler(object sender, get_Ppharmacy_products_dbCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_Ppharmacy_products_dbCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_Ppharmacy_products_dbCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classPharmacyProducts[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classPharmacyProducts[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void add_pharmacy_productCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void get_ordersCompletedEventHandler(object sender, get_ordersCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    public partial class get_ordersCompletedEventArgs : System.ComponentModel.AsyncCompletedEventArgs {
+        
+        private object[] results;
+        
+        internal get_ordersCompletedEventArgs(object[] results, System.Exception exception, bool cancelled, object userState) : 
+                base(exception, cancelled, userState) {
+            this.results = results;
+        }
+        
+        /// <remarks/>
+        public classCartItem[] Result {
+            get {
+                this.RaiseExceptionIfNecessary();
+                return ((classCartItem[])(this.results[0]));
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void update_PharmacyCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void update_hospitalCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Web.Services", "4.7.2558.0")]
+    public delegate void update_clientCompletedEventHandler(object sender, System.ComponentModel.AsyncCompletedEventArgs e);
 }
 
 #pragma warning restore 1591

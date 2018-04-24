@@ -8,7 +8,7 @@ namespace Semester4OOAD_Project
 {
     class loginSessionDoctor
     {
-        public static classDoctor session;
+        public static network.classDoctor session;
         public loginSessionDoctor()
         {
             session = null;

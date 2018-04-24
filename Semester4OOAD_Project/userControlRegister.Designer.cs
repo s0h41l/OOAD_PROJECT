@@ -61,10 +61,10 @@
             // bunifuCustomLabel1
             // 
             this.bunifuCustomLabel1.AutoSize = true;
-            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Poppins", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuCustomLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(74, 468);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(179, 23);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(163, 16);
             this.bunifuCustomLabel1.TabIndex = 12;
             this.bunifuCustomLabel1.Text = "Already have an account?";
             // 
@@ -131,12 +131,13 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Poppins", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(128, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(86, 34);
+            this.label1.Size = new System.Drawing.Size(75, 24);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sign up";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxConfirmPass
             // 
@@ -285,11 +286,11 @@
             // 
             this.labelemailexist.AutoSize = true;
             this.labelemailexist.BackColor = System.Drawing.Color.Transparent;
-            this.labelemailexist.Font = new System.Drawing.Font("Abel", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelemailexist.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelemailexist.ForeColor = System.Drawing.Color.Red;
             this.labelemailexist.Location = new System.Drawing.Point(173, 133);
             this.labelemailexist.Name = "labelemailexist";
-            this.labelemailexist.Size = new System.Drawing.Size(157, 21);
+            this.labelemailexist.Size = new System.Drawing.Size(178, 20);
             this.labelemailexist.TabIndex = 15;
             this.labelemailexist.Text = "Email already registered";
             this.labelemailexist.Visible = false;

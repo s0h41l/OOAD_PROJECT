@@ -33,6 +33,7 @@
             this.textBoxName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.textBoxAmout = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.btnModify = new Bunifu.Framework.UI.BunifuTileButton();
+            this.textBoxPrice = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,7 +63,7 @@
             this.textBoxName.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.textBoxName.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.textBoxName.LineThickness = 1;
-            this.textBoxName.Location = new System.Drawing.Point(118, 85);
+            this.textBoxName.Location = new System.Drawing.Point(64, 85);
             this.textBoxName.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxName.Name = "textBoxName";
             this.textBoxName.Size = new System.Drawing.Size(265, 33);
@@ -81,7 +82,7 @@
             this.textBoxAmout.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.textBoxAmout.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
             this.textBoxAmout.LineThickness = 1;
-            this.textBoxAmout.Location = new System.Drawing.Point(433, 85);
+            this.textBoxAmout.Location = new System.Drawing.Point(337, 85);
             this.textBoxAmout.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxAmout.Name = "textBoxAmout";
             this.textBoxAmout.Size = new System.Drawing.Size(161, 33);
@@ -101,12 +102,31 @@
             this.btnModify.ImageZoom = 50;
             this.btnModify.LabelPosition = 41;
             this.btnModify.LabelText = "Add product";
-            this.btnModify.Location = new System.Drawing.Point(118, 161);
+            this.btnModify.Location = new System.Drawing.Point(64, 161);
             this.btnModify.Margin = new System.Windows.Forms.Padding(6);
             this.btnModify.Name = "btnModify";
-            this.btnModify.Size = new System.Drawing.Size(476, 55);
+            this.btnModify.Size = new System.Drawing.Size(603, 55);
             this.btnModify.TabIndex = 2;
             this.btnModify.Click += new System.EventHandler(this.btnModify_Click);
+            // 
+            // textBoxPrice
+            // 
+            this.textBoxPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.textBoxPrice.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.textBoxPrice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.textBoxPrice.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
+            this.textBoxPrice.HintText = "Enter Price/piece";
+            this.textBoxPrice.isPassword = false;
+            this.textBoxPrice.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
+            this.textBoxPrice.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.textBoxPrice.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
+            this.textBoxPrice.LineThickness = 1;
+            this.textBoxPrice.Location = new System.Drawing.Point(506, 85);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxPrice.Name = "textBoxPrice";
+            this.textBoxPrice.Size = new System.Drawing.Size(161, 33);
+            this.textBoxPrice.TabIndex = 31;
+            this.textBoxPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // formAddproduct
             // 
@@ -114,6 +134,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(751, 301);
+            this.Controls.Add(this.textBoxPrice);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.textBoxName);
             this.Controls.Add(this.textBoxAmout);
@@ -133,5 +154,6 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxName;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxAmout;
         private Bunifu.Framework.UI.BunifuTileButton btnModify;
+        private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxPrice;
     }
 }
