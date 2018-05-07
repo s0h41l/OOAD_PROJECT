@@ -9,7 +9,7 @@ namespace OOAD_PROJECT_SERVER
     [DataContract]
     public class classDbClient
     {
-        private static List<classClient> db = new List<classClient>();
+        public static List<classClient> db = new List<classClient>();
 
         [DataMember]
         public static List<classClient> Db
@@ -24,6 +24,7 @@ namespace OOAD_PROJECT_SERVER
                 db = value;
             }
         }
+        
         public void add_client(classClient c)
         {
             db.Add(c);

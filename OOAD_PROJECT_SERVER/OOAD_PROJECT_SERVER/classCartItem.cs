@@ -13,9 +13,10 @@ namespace OOAD_PROJECT_SERVER
         private string buyer_email;
         private string buyer_number;
         private string product_ordered;
-        private int proudct_amout;
+        private string proudct_amout;
         private string buyar_longitude;
         private string buyer_latitude;
+        private string buyer_adress;
 
         [DataMember]
         public string Buyer_name
@@ -70,7 +71,7 @@ namespace OOAD_PROJECT_SERVER
             }
         }
         [DataMember]
-        public int Proudct_amout
+        public string Proudct_amout
         {
             get
             {
@@ -106,6 +107,19 @@ namespace OOAD_PROJECT_SERVER
             set
             {
                 buyer_latitude = value;
+            }
+        }
+        [DataMember]
+        public string Buyer_adress
+        {
+            get
+            {
+                return buyer_adress;
+            }
+
+            set
+            {
+                buyer_adress = value;
             }
         }
     }

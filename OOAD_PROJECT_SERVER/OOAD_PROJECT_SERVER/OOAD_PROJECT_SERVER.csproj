@@ -98,8 +98,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="classAdmin.cs" />
+    <Compile Include="classBlood.cs" />
     <Compile Include="classCartItem.cs" />
     <Compile Include="classClient.cs" />
+    <Compile Include="classEmergencyCalls.cs" />
     <Compile Include="Properties\classdbAdmin.cs" />
     <Compile Include="classDbClient.cs" />
     <Compile Include="classDbDoctor.cs" />

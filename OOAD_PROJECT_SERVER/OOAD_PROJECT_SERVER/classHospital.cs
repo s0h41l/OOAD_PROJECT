@@ -21,6 +21,8 @@ namespace OOAD_PROJECT_SERVER
         private string secretq;
         private string secreta;
         private string adress;
+        private List<classBlood> blood = new List<classBlood>();
+        private List<classEmergencyCalls> emergency_calls = new List<classEmergencyCalls>();
         private double longitude = 0;
         private double latitude = 0;
 
@@ -28,6 +30,9 @@ namespace OOAD_PROJECT_SERVER
         {
             count++;
         }
+
+       
+
         [DataMember]
         public string Name
         {
@@ -184,6 +189,33 @@ namespace OOAD_PROJECT_SERVER
             set
             {
                 latitude = value;
+            }
+        }
+
+        [DataMember]
+        public List<classBlood> Blood
+        {
+            get
+            {
+                return blood;
+            }
+
+            set
+            {
+                blood = value;
+            }
+        }
+        [DataMember]
+        public List<classEmergencyCalls> Emergency_calls
+        {
+            get
+            {
+                return emergency_calls;
+            }
+
+            set
+            {
+                emergency_calls = value;
             }
         }
     }

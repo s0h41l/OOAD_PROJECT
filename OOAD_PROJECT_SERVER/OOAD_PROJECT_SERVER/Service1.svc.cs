@@ -254,9 +254,9 @@ namespace OOAD_PROJECT_SERVER
             return classDbPharmacy.get_pharmacy(email, pass);
         }
 
-        public void set_client_location(string email)
+        public void set_client_location(string email, string longi, string lati)
         {
-            throw new NotImplementedException();
+            classDbClient.location_set(email, Convert.ToDouble(longi), Convert.ToDouble(lati));
         }
 
         public void set_doctor_location(string email,string longi,string lati)
@@ -395,6 +395,247 @@ namespace OOAD_PROJECT_SERVER
         public void update_client(string email, string name, string password, string number, string adress, string sq, string sa)
         {
             classDbClient.update(email, name, password, number, adress, sq, sa);
+        }
+
+        public void add_blood(string email,string pass,string group, string amount)
+        {
+
+            bool exist = false;
+            foreach (classHospital j in classDbHospital.Db)
+            {
+                if ( j.Email== email && j.Password == pass)
+                {
+
+                    foreach (classBlood i in j.Blood)
+                    {
+
+
+                        if (group == i.Blood_group)
+                        {
+                            try
+                            {
+                                i.Amount_in_units += Convert.ToInt32(amount);
+
+                            }
+                            catch (Exception)
+                            {
+                                i.Amount_in_units += 1;
+
+                            }
+                            exist = true;
+                            //MessageBox.Show("Product Updated");
+
+                        }
+
+
+                    }
+
+                    if (!exist)
+                    {
+                        classBlood pr = new classBlood();
+                        pr.Blood_group = group;
+                       
+                        try
+                        {
+                            pr.Amount_in_units = Convert.ToInt32(amount);
+
+                        }
+                        catch (Exception)
+                        {
+                            pr.Amount_in_units = 1;
+
+                        }
+
+                        j.Blood.Add(pr);
+
+
+                        // loginSessionPharmacy.session.productdb.Add(pr);
+                        //MessageBox.Show("Product Added");
+
+                    }
+
+
+                }
+
+
+
+            }
+
+        }
+
+        public List<classBlood> get_blood(string email, string pass)
+        {
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                if(i.Email==email && i.Password == pass)
+                {
+                    return i.Blood;
+                }
+            }
+            return null;
+        }
+
+        public List<classEmergencyCalls> get_emergency_calls(string email, string pass)
+        {
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                if(email==i.Email && i.Password == pass)
+                {
+                    return i.Emergency_calls;
+                }
+            }
+            return null;
+        }
+
+        public List<classDoctor> search_doc(string spec)
+        {
+            List<classDoctor> doc=new List<classDoctor>();
+            foreach(classDoctor i in classDbDoctor.Db)
+            {
+                if (i.Specializtion == spec)
+                {
+                    doc.Add(i);
+                }
+            }
+            return doc;
+        }
+
+        public List<classDoctor> search_doc_near(string spec, string longitude, string latitude)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<classPharmacy> search_pharmacy(string medicine)
+        {
+            List<classPharmacy> ph = new List<classPharmacy>();
+            foreach(classPharmacy i in classDbPharmacy.Db)
+            {
+                foreach(classPharmacyProducts j in i.Productdb)
+                {
+                    if (j.Product_name == medicine)
+                    {
+                        ph.Add(i);
+                    }
+
+                }
+            }
+            return ph;
+        }
+
+        public List<classDoctor> search_pharmacy_near(string medicine, string longitude, string latitude)
+        {
+            throw new NotImplementedException();
+        }
+
+        public List<classHospital> search_hospital(string blood)
+        {
+            List<classHospital> hosp = new List<classHospital>();
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                foreach(classBlood j in i.Blood)
+                {
+                    if (j.Blood_group == blood)
+                    {
+                        hosp.Add(i);
+
+                    }
+                }
+
+            }
+            return hosp;
+        }
+
+        public List<classDoctor> search_hospital_near(string blood, string longitude, string latitude)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void call_ambulance(string name, string email, string adress, string logitude, string latitude)
+        {
+            classEmergencyCalls em = new classEmergencyCalls();
+            em.Caller_name = name;
+            em.Caller_email = email;
+            em.Caller_Adress = adress;
+            em.Caller_latitude = Convert.ToDouble(latitude);
+            em.Caller_longitude = Convert.ToDouble(logitude);
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                i.Emergency_calls.Add(em);
+            } 
+        }
+
+        public void delete_user(string email)
+        {
+            classDbDoctor.Db.RemoveAll(x => x.Email == email);
+            classDbHospital.Db.RemoveAll(x => x.Email == email);
+            classDbPharmacy.Db.RemoveAll(x => x.Email == email);
+            classDbClient.Db.RemoveAll(x => x.Email == email);
+        }
+
+        public void order_product(string buyer_name, string buyer_email, string buyer_number, string adress, string logitude, string latitude, string product_name, string product_amout, string seller_email)
+        {
+            foreach(classPharmacy i in classDbPharmacy.Db)
+            {
+                if (i.Email == seller_email)
+                {
+                    classCartItem c = new classCartItem();
+                    c.Buyer_email = buyer_email;
+                    c.Buyer_name = buyer_name;
+                    c.Buyer_number = buyer_number;
+                    c.Buyer_adress = adress;
+                    c.Buyar_longitude = logitude;
+                    c.Buyer_latitude = latitude;
+                    c.Product_ordered = product_name;
+                    c.Proudct_amout= product_amout;
+                    i.Order.Add(c);
+                }
+            }
+        }
+
+        public void delete_product(string user_email, string product_name)
+        {
+            foreach(classPharmacy i in classDbPharmacy.Db)
+            {
+                if (i.Email == user_email)
+                {
+                    i.Productdb.RemoveAll(x => x.Product_name == product_name);
+                }
+                
+            }
+        }
+
+        public void delete_order(string user_email, string order_email)
+        {
+            foreach(classPharmacy i in classDbPharmacy.Db)
+            {
+                if (i.Email == user_email)
+                {
+                    i.Order.RemoveAll(x => x.Buyer_email == order_email);
+                }
+            }
+          
+        }
+
+        public void delete_blood(string user_email, string blood_group)
+        {
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                if (i.Email == user_email)
+                {
+                    i.Blood.RemoveAll(x => x.Blood_group == blood_group);
+                }
+            }
+        }
+
+        public void delete_ambulance(string email, string em)
+        {
+            foreach(classHospital i in classDbHospital.Db)
+            {
+                if (i.Email == email)
+                {
+                    i.Emergency_calls.RemoveAll(x => x.Caller_email == em);
+                }
+            }
         }
     }
 }
