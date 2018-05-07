@@ -11,7 +11,6 @@ using System.Device.Location;
 
 namespace Semester4OOAD_Project
 {
-    
     public partial class userControlRegister : UserControl
     {
         Form1 frm;
@@ -34,7 +33,7 @@ namespace Semester4OOAD_Project
 
         private void btnSignUp_Click(object sender, EventArgs e)
         {
-            network.Service1 server = new network.Service1();
+            ///network.Service1 server = new network.Service1();
 
          //   network.classClient[] clients = server.getAllClients();
 
@@ -55,75 +54,42 @@ namespace Semester4OOAD_Project
 
             }
 
-            foreach (classClient i in classDbClient.db)
-            {
-                if (i.Email == textBoxEmail.Text)
-                {
-                    exist = true;
-                }
+            bool is_exist_c;
+            bool is_exist_passed_c;
+            bool is_exist_d;
+            bool is_exist_passed_d;
+            bool is_exist_h;
+            bool is_exist_passed_h;
+            bool is_exist_p;
+            bool is_exist_passed_p;
+            network.Service1 ser = new network.Service1();
 
-            }
-
-
-            foreach (classDoctor i in classDbDoctor.db)
-            {
-                if (i.Email == textBoxEmail.Text)
-                {
-                    exist = true;
-                }
-
-            }
-
-
-            foreach (classHospital i in classDbHospital.db)
-            {
-                if (i.Email == textBoxEmail.Text)
-                {
-                    exist = true;
-                }
-
-            }
-
-            foreach (classPharmacy i in classDbPharmacy.db)
-            {
-                if (i.Email == textBoxEmail.Text)
-                {
-                    exist = true;
-                }
-
-            }
-
-
+            ser.is_exist_cleint(textBoxEmail.Text, out is_exist_c, out is_exist_passed_c);
+            ser.is_exist_doctor(textBoxEmail.Text, out is_exist_d, out is_exist_passed_d);
+            ser.is_exist_hospital(textBoxEmail.Text, out is_exist_h, out is_exist_passed_h);
+            ser.is_exist_Pharmacy(textBoxEmail.Text, out is_exist_p, out is_exist_passed_p);
             
+            if (is_exist_c || is_exist_d || is_exist_h || is_exist_p || textBoxEmail.Text == "admin")
+            {
+                exist = true;
+
+            }
 
             if (dropDownRegAs.selectedValue== "Client")
             {
                 
                 if (exist == false && filled==true && pass==true)
                 {
-                    classClient client = new classClient();
-                    client.Id = classClient.count;
-                    client.Name = textBoxName.Text;
-                    client.Email = textBoxEmail.Text;
-                    client.Password = textBoxPassword.Text;
-                    client.Mobile = textBoxNumber.Text;
-                    client.Type = "Client";
-                    client.Secretq = dropDrownSecretQ.selectedValue;
-                    client.Secreta = textBoxSec.Text;
-                    classDbClient.db.Add(client);
+                    ser.register_client(textBoxName.Text, textBoxEmail.Text, textBoxPassword.Text, textBoxNumber.Text, dropDownRegAs.selectedValue,dropDrownSecretQ.selectedValue,textBoxSec.Text);
+  
                     textBoxName.Text = "";
                     textBoxEmail.Text = "";
                     textBoxNumber.Text = "";
                     textBoxPassword.Text = "";
                     textBoxConfirmPass.Text = "";
                     MessageBox.Show("Registered");
-            
-
+           
                 }
-                
-
-
-
                    
             }
             if (dropDownRegAs.selectedValue == "Doctor")
@@ -131,16 +97,7 @@ namespace Semester4OOAD_Project
                 
                 if (exist == false && filled == true && pass == true)
                 {
-                    classDoctor usr = new classDoctor();
-                    usr.Id = classDoctor.count;
-                    usr.Name = textBoxName.Text;
-                    usr.Email = textBoxEmail.Text;
-                    usr.Password = textBoxPassword.Text;
-                    usr.Mobile = textBoxNumber.Text;
-                    usr.Type = "Doctor";
-                    usr.Secretq = dropDrownSecretQ.selectedValue;
-                    usr.Secreta = textBoxSec.Text;
-                    classDbDoctor.db.Add(usr);
+                    ser.register_doctor(textBoxName.Text, textBoxEmail.Text, textBoxPassword.Text, textBoxNumber.Text, dropDownRegAs.selectedValue, dropDrownSecretQ.selectedValue, textBoxSec.Text);
                     textBoxName.Text = "";
                     textBoxEmail.Text = "";
                     textBoxNumber.Text = "";
@@ -148,15 +105,8 @@ namespace Semester4OOAD_Project
                     textBoxConfirmPass.Text = "";
                     MessageBox.Show("Registered");
 
-
-
-
                 }
                 
-
-
-
-
             }
 
             if (dropDownRegAs.selectedValue == "Hospital")
@@ -164,16 +114,7 @@ namespace Semester4OOAD_Project
                 
                 if (exist == false && filled == true && pass == true)
                 {
-                    classHospital usr = new classHospital();
-                    usr.Id = classHospital.count;
-                    usr.Name = textBoxName.Text;
-                    usr.Email = textBoxEmail.Text;
-                    usr.Password = textBoxPassword.Text;
-                    usr.Mobile = textBoxNumber.Text;
-                    usr.Type = "Doctor";
-                    usr.Secretq = dropDrownSecretQ.selectedValue;
-                    usr.Secreta = textBoxSec.Text;
-                    classDbHospital.db.Add(usr);
+                    ser.register_hospital(textBoxName.Text, textBoxEmail.Text, textBoxPassword.Text, textBoxNumber.Text, dropDownRegAs.selectedValue, dropDrownSecretQ.selectedValue, textBoxSec.Text);
                     textBoxName.Text = "";
                     textBoxEmail.Text = "";
                     textBoxNumber.Text = "";
@@ -186,9 +127,6 @@ namespace Semester4OOAD_Project
 
                 }
                 
-
-
-
 
             }
 
@@ -197,16 +135,7 @@ namespace Semester4OOAD_Project
                 
                 if (exist == false && filled == true && pass == true)
                 {
-                    classPharmacy usr = new classPharmacy();
-                    usr.Id = classPharmacy.count;
-                    usr.Name = textBoxName.Text;
-                    usr.Email = textBoxEmail.Text;
-                    usr.Password = textBoxPassword.Text;
-                    usr.Mobile = textBoxNumber.Text;
-                    usr.Type = "Doctor";
-                    usr.Secretq = dropDrownSecretQ.selectedValue;
-                    usr.Secreta = textBoxSec.Text;
-                    classDbPharmacy.db.Add(usr);
+                    ser.register_Pharmacy(textBoxName.Text, textBoxEmail.Text, textBoxPassword.Text, textBoxNumber.Text, dropDownRegAs.selectedValue, dropDrownSecretQ.selectedValue, textBoxSec.Text);
                     textBoxName.Text = "";
                     textBoxEmail.Text = "";
                     textBoxNumber.Text = "";
@@ -214,15 +143,10 @@ namespace Semester4OOAD_Project
                     textBoxConfirmPass.Text = "";
                     MessageBox.Show("Registered");
 
-
-
-
                 }
-                
-
-
 
             }
+
 
             if (exist == true)
             {
@@ -232,8 +156,6 @@ namespace Semester4OOAD_Project
             {
                 MessageBox.Show("Filled must be filled");
             }
-
-
 
 
 
@@ -286,6 +208,11 @@ namespace Semester4OOAD_Project
         }
 
         private void bunifuDropdown2_onItemSelected(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

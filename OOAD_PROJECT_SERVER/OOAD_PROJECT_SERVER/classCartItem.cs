@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Runtime.Serialization;
 
 namespace OOAD_PROJECT_SERVER
 {
+    [DataContract]
     public class classCartItem
     {
         private string buyer_name;
@@ -15,6 +17,7 @@ namespace OOAD_PROJECT_SERVER
         private string buyar_longitude;
         private string buyer_latitude;
 
+        [DataMember]
         public string Buyer_name
         {
             get
@@ -27,7 +30,7 @@ namespace OOAD_PROJECT_SERVER
                 buyer_name = value;
             }
         }
-
+        [DataMember]
         public string Buyer_email
         {
             get
@@ -40,7 +43,7 @@ namespace OOAD_PROJECT_SERVER
                 buyer_email = value;
             }
         }
-
+        [DataMember]
         public string Buyer_number
         {
             get
@@ -53,7 +56,7 @@ namespace OOAD_PROJECT_SERVER
                 buyer_number = value;
             }
         }
-
+        [DataMember]
         public string Product_ordered
         {
             get
@@ -66,7 +69,7 @@ namespace OOAD_PROJECT_SERVER
                 product_ordered = value;
             }
         }
-
+        [DataMember]
         public int Proudct_amout
         {
             get
@@ -79,7 +82,7 @@ namespace OOAD_PROJECT_SERVER
                 proudct_amout = value;
             }
         }
-
+        [DataMember]
         public string Buyar_longitude
         {
             get
@@ -92,7 +95,7 @@ namespace OOAD_PROJECT_SERVER
                 buyar_longitude = value;
             }
         }
-
+        [DataMember]
         public string Buyer_latitude
         {
             get

@@ -29,9 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(formUpdateProfile));
-            this.dropDrownSecretQ = new Bunifu.Framework.UI.BunifuDropdown();
             this.textBoxName = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.textBoxSec = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.textBoxNumber = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.textBoxConfirmPass = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.textBoxPassword = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -45,26 +43,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.modifydp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             this.SuspendLayout();
-            // 
-            // dropDrownSecretQ
-            // 
-            this.dropDrownSecretQ.AutoSize = true;
-            this.dropDrownSecretQ.BackColor = System.Drawing.Color.White;
-            this.dropDrownSecretQ.BorderRadius = 3;
-            this.dropDrownSecretQ.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.dropDrownSecretQ.ForeColor = System.Drawing.Color.White;
-            this.dropDrownSecretQ.Items = new string[] {
-        "Birth place",
-        "Favourite color",
-        "Mother birth place",
-        "Name of first pet"};
-            this.dropDrownSecretQ.Location = new System.Drawing.Point(59, 269);
-            this.dropDrownSecretQ.Name = "dropDrownSecretQ";
-            this.dropDrownSecretQ.NomalColor = System.Drawing.Color.Silver;
-            this.dropDrownSecretQ.onHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.dropDrownSecretQ.selectedIndex = -1;
-            this.dropDrownSecretQ.Size = new System.Drawing.Size(154, 33);
-            this.dropDrownSecretQ.TabIndex = 21;
             // 
             // textBoxName
             // 
@@ -84,25 +62,6 @@
             this.textBoxName.Size = new System.Drawing.Size(290, 33);
             this.textBoxName.TabIndex = 16;
             this.textBoxName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            // 
-            // textBoxSec
-            // 
-            this.textBoxSec.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.textBoxSec.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.textBoxSec.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.textBoxSec.HintForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(142)))), ((int)(((byte)(142)))));
-            this.textBoxSec.HintText = "Secret answer";
-            this.textBoxSec.isPassword = false;
-            this.textBoxSec.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(142)))), ((int)(((byte)(255)))));
-            this.textBoxSec.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.textBoxSec.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(215)))), ((int)(((byte)(217)))), ((int)(((byte)(221)))));
-            this.textBoxSec.LineThickness = 1;
-            this.textBoxSec.Location = new System.Drawing.Point(220, 269);
-            this.textBoxSec.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxSec.Name = "textBoxSec";
-            this.textBoxSec.Size = new System.Drawing.Size(129, 33);
-            this.textBoxSec.TabIndex = 22;
-            this.textBoxSec.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             // 
             // textBoxNumber
             // 
@@ -285,9 +244,7 @@
             this.Controls.Add(this.bunifuThinButton21);
             this.Controls.Add(this.btnModify);
             this.Controls.Add(this.modifydp);
-            this.Controls.Add(this.dropDrownSecretQ);
             this.Controls.Add(this.textBoxName);
-            this.Controls.Add(this.textBoxSec);
             this.Controls.Add(this.textBoxNumber);
             this.Controls.Add(this.textBoxConfirmPass);
             this.Controls.Add(this.textBoxPassword);
@@ -299,14 +256,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.modifydp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuDropdown dropDrownSecretQ;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxName;
-        private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxSec;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxNumber;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxConfirmPass;
         private Bunifu.Framework.UI.BunifuMaterialTextbox textBoxPassword;

@@ -3,25 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Drawing;
+using System.Runtime.Serialization;
 
 namespace OOAD_PROJECT_SERVER
 {
+    [DataContract]
     public class classAdmin
     {
-        public static string name = "Sohail Khn";
-        public static string email = "admin@sehat.pk";
-        public static string password = "1234";
-        public static string mobile;
-        public static string type;
-        public static Image dp;
-        public static string secretq;
-        public static string secreta;
-        private static double longitude = 0;
-        private static double latitude = 0;
-        public static string adress;
+        private string name = "Sohail Khn";
+        private string email = "admin@sehat.pk";
+        private string password = "1234";
+        private string mobile;
+        private string type;
+        private Image dp;
+        private string secretq;
+        private string secreta;
+        private double longitude = 0;
+        private double latitude = 0;
+        private string adress;
 
-
-
+        [DataMember]
         public string Name
         {
             get
@@ -34,7 +35,7 @@ namespace OOAD_PROJECT_SERVER
                 name = value;
             }
         }
-
+        [DataMember]
         public string Email
         {
             get
@@ -47,7 +48,7 @@ namespace OOAD_PROJECT_SERVER
                 email = value;
             }
         }
-
+        [DataMember]
         public string Password
         {
             get
@@ -60,7 +61,7 @@ namespace OOAD_PROJECT_SERVER
                 password = value;
             }
         }
-
+        [DataMember]
         public string Mobile
         {
             get
@@ -73,7 +74,7 @@ namespace OOAD_PROJECT_SERVER
                 mobile = value;
             }
         }
-
+        [DataMember]
         public string Type
         {
             get
@@ -86,7 +87,7 @@ namespace OOAD_PROJECT_SERVER
                 type = value;
             }
         }
-
+        [DataMember]
         public Image Dp
         {
             get
@@ -99,7 +100,7 @@ namespace OOAD_PROJECT_SERVER
                 dp = value;
             }
         }
-
+        [DataMember]
         public string Secretq
         {
             get
@@ -112,7 +113,7 @@ namespace OOAD_PROJECT_SERVER
                 secretq = value;
             }
         }
-
+        [DataMember]
         public string Secreta
         {
             get
@@ -125,23 +126,8 @@ namespace OOAD_PROJECT_SERVER
                 secreta = value;
             }
         }
-
-
-
-        public string Adress
-        {
-            get
-            {
-                return adress;
-            }
-
-            set
-            {
-                adress = value;
-            }
-        }
-
-        public static double Longitude
+        [DataMember]
+        public double Longitude
         {
             get
             {
@@ -153,8 +139,8 @@ namespace OOAD_PROJECT_SERVER
                 longitude = value;
             }
         }
-
-        public static double Latitude
+        [DataMember]
+        public double Latitude
         {
             get
             {
@@ -164,6 +150,19 @@ namespace OOAD_PROJECT_SERVER
             set
             {
                 latitude = value;
+            }
+        }
+        [DataMember]
+        public string Adress
+        {
+            get
+            {
+                return adress;
+            }
+
+            set
+            {
+                adress = value;
             }
         }
     }

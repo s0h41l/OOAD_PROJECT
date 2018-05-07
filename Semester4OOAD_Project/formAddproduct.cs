@@ -24,46 +24,13 @@ namespace Semester4OOAD_Project
 
         private void btnModify_Click(object sender, EventArgs e)
         {
-            bool exist = false;
-            foreach(classProduct i in loginSessionPharmacy.session.productdb)
-            {
-                if (textBoxName.Text == i.Product_name)
-                {
-                    try
-                    {
-                        i.Product_amout += Convert.ToInt32(textBoxAmout.Text);
 
-                    }catch(Exception)
-                    {
-                        i.Product_amout += 1;
-
-                    }
-                    
-                    exist = true;
-                    MessageBox.Show("Product Updated");
-                }
-            }
-            if (!exist)
-            {
-                classProduct pr = new classProduct();
-                pr.Product_name = textBoxName.Text;
-                try
-                {
-                    pr.Product_amout = Convert.ToInt32(textBoxAmout.Text);
-
-                }catch(Exception)
-                {
-                    pr.Product_amout = 1;
-
-                }
-
-                
-                loginSessionPharmacy.session.productdb.Add(pr);
-                MessageBox.Show("Product Added");
-
-            }
+            network.Service1 ser = new network.Service1();
+            ser.add_pharmacy_product(loginSessionPharmacy.session.Email, loginSessionPharmacy.session.Password,textBoxName.Text, textBoxAmout.Text, textBoxPrice.Text);
+            MessageBox.Show("Product Updated");
             textBoxAmout.Text = "";
             textBoxName.Text = "";
+            textBoxPrice.Text = "";
 
             
         }

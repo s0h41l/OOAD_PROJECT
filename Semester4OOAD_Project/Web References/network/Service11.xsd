@@ -20,6 +20,8 @@
       <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Dp" nillable="true" type="q1:Image" />
       <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
       <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
       <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
@@ -29,4 +31,125 @@
     </xs:sequence>
   </xs:complexType>
   <xs:element name="classClient" nillable="true" type="tns:classClient" />
+  <xs:complexType name="classAdmin">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Dp" nillable="true" type="q2:Image" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secreta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secretq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classAdmin" nillable="true" type="tns:classAdmin" />
+  <xs:complexType name="ArrayOfclassDoctor">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="classDoctor" nillable="true" type="tns:classDoctor" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclassDoctor" nillable="true" type="tns:ArrayOfclassDoctor" />
+  <xs:complexType name="classDoctor">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Dp" nillable="true" type="q3:Image" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secreta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secretq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Specializtion" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classDoctor" nillable="true" type="tns:classDoctor" />
+  <xs:complexType name="ArrayOfclassHospital">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="classHospital" nillable="true" type="tns:classHospital" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclassHospital" nillable="true" type="tns:ArrayOfclassHospital" />
+  <xs:complexType name="classHospital">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Dp" nillable="true" type="q4:Image" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secreta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secretq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classHospital" nillable="true" type="tns:classHospital" />
+  <xs:complexType name="ArrayOfclassPharmacy">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="classPharmacy" nillable="true" type="tns:classPharmacy" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclassPharmacy" nillable="true" type="tns:ArrayOfclassPharmacy" />
+  <xs:complexType name="classPharmacy">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Adress" nillable="true" type="xs:string" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/System.Drawing" minOccurs="0" name="Dp" nillable="true" type="q5:Image" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Id" type="xs:long" />
+      <xs:element minOccurs="0" name="Latitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Longitude" type="xs:double" />
+      <xs:element minOccurs="0" name="Mobile" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Order" nillable="true" type="tns:ArrayOfclassCartItem" />
+      <xs:element minOccurs="0" name="Password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Productdb" nillable="true" type="tns:ArrayOfclassPharmacyProducts" />
+      <xs:element minOccurs="0" name="Secreta" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Secretq" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classPharmacy" nillable="true" type="tns:classPharmacy" />
+  <xs:complexType name="ArrayOfclassCartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="classCartItem" nillable="true" type="tns:classCartItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclassCartItem" nillable="true" type="tns:ArrayOfclassCartItem" />
+  <xs:complexType name="classCartItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Buyar_longitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buyer_email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buyer_latitude" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buyer_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Buyer_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Product_ordered" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Proudct_amout" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classCartItem" nillable="true" type="tns:classCartItem" />
+  <xs:complexType name="ArrayOfclassPharmacyProducts">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="classPharmacyProducts" nillable="true" type="tns:classPharmacyProducts" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfclassPharmacyProducts" nillable="true" type="tns:ArrayOfclassPharmacyProducts" />
+  <xs:complexType name="classPharmacyProducts">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Product_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Product_name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Product_price" type="xs:long" />
+      <xs:element minOccurs="0" name="Product_quantity" type="xs:long" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="classPharmacyProducts" nillable="true" type="tns:classPharmacyProducts" />
 </xs:schema>
